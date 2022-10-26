@@ -1,3 +1,17 @@
 <div class="home">
     <h2>“Sólo la unidad del pueblo y la solidaridad de sus dirigentes garantizan la grandeza de las naciones.”</h2>
+    <form (ngSubmit)="onSubmit()" #myForm="ngForm" class="formCountry">
+        
+    <label class="CountryName">
+        <input class="name" type="text" [(ngModel)]="model.name" >
+        name
+    </label>
+    
+    <label class="CountryCapital">
+        <input class="capital" type="text" [(ngModel)]="model.capital" >
+      capital
+    </label>
+    <button type="submit" class="boton">Buscar</button>
+</form>
+
 </div>
