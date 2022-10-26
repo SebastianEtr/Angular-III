@@ -1,10 +1,17 @@
-
-<p style="color: rgb(255, 0, 0) ;">Hello World</p>
-
-<a routerLink="/country-list">ir a paises</a>
-<a routerLink="/Home">Home</a>
-<button (click)="authenticated()">Login</button>
-<button (click)="CerrarSesion()">Logout</button>
+<section class="countries">
+    <div class="titulo">
+        <h1>Paises del Mundo</h1>
+    </div>
+    <div class="links">
+        <a class="country" routerLink="/country-list">ir a paises</a>
+        <a class="Home" routerLink="/Home">Home</a>
+    </div>
+    
+    <div class="botones">
+        <button (click)="authenticated()" class="login">Login</button>
+        <button (click)="CerrarSesion()"  class="logout">Logout</button>
+    </div>
+</section>
 
 
 

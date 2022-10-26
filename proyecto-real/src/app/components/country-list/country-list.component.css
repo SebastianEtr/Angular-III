@@ -1,0 +1,22 @@
+.list{
+    margin: 10px;
+  
+    padding: 10px;
+    
+}
+.list p {
+    text-align: center;
+    font-size: 30px;
+    color: red;
+}
+
+.list ul {
+margin: 10px;
+text-align: center;
+padding: 6px;
+}
+
+.list ul li {
+    margin: 10px;
+    list-style: none;
+}

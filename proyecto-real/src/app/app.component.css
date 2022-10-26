@@ -1,0 +1,58 @@
+.countries{
+    margin: 10px;
+    
+    padding: 10px;
+    
+}
+.countries .titulo h1{
+font-size: 50px;
+color: blue;
+font-family: arial;
+margin: 30px;
+padding: 41px;
+text-align: center;
+}
+
+
+.countries .links{
+    margin: 10px;
+    text-align: center;
+padding: 22px;
+}
+
+.countries .links .country {
+margin: 10px;
+text-decoration: none;
+border-radius: 69px;
+background: green;
+padding: 25px;
+color: white;
+}
+.countries .links .Home {
+margin: 10px;
+text-decoration: none;
+border-radius: 69px;
+background: rgb(233, 2, 2);
+padding: 25px;
+color: white;
+    
+}
+
+.countries .botones{
+    margin: 10px;
+    text-align: center;
+}
+
+.countries .botones .login {
+    margin: 10px;
+    border-radius: 10px;
+padding: 19px;
+background: #5757d9;
+}
+
+.countries .botones .logout {
+    margin: 10px;
+    border-radius: 10px;
+padding: 19px;
+background: #5757d9;
+}

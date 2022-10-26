@@ -1,7 +1,12 @@
-<ul>
-    <li *ngFor="let country of countries">
-        {{country.name.official}}-{{country.area}}
-    </li>
-    
-</ul>
+<section class="list">
+    <p>
+        Listas de los paises del mundo
+    </p>
+    <ul>
+        <li *ngFor="let country of countries">
+            {{country.name.official}}-{{country.name.common}}
+        </li>
+        
+    </ul>
+</section>
 
