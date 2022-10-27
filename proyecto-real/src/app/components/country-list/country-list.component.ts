@@ -10,16 +10,19 @@ import { ListService } from '../list.service';
 })
 export class CountryListComponent implements OnInit{
 
-  public Icountries: ICountry[] = [];
-
+  
   countries: Country[] = [];
 
+  
+  public Icountries: ICountry[] = [];
   newCountry: ICountry = {
     name: '',
     capital: '',
     forKids: ''
   }
 
+ 
+  
   constructor( private listService:ListService) { }
 
   
@@ -36,4 +39,6 @@ public enviar(): void {
   const copy = {...this.newCountry}
   this.Icountries.push(copy)
 }
+
+public saveCountry(): void { console.log(this.Icountries.push(this.newCountry)) }
 }

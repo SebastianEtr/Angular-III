@@ -12,7 +12,7 @@
 
 
 <div class="home">
-    <form #form="ngForm" (ngSubmit)="enviar()">
+    <form #form="ngForm" (ngSubmit)="enviar()" >
         <label>Nombre</label>
         <input name="name" type="text" [(ngModel)]="newCountry.name" required #countryName="ngModel"/>
         <span *ngIf="countryName.invalid">Este campo es requerido</span>
@@ -21,7 +21,7 @@
         <br>
         <label>Capital</label>
         <input name="capital" type="text" [(ngModel)]="newCountry.capital" />
-        <button>Submit</button>
+        <button type="submit"  (click)="saveCountry">Submit</button>
       </form>
       
       <pre> {{ newCountry | json }} </pre>
