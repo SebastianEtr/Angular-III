@@ -12,7 +12,7 @@
 
 
 <div class="home">
-    <form #form="ngForm" (ngSubmit)="enviar()" >
+    <form #form="ngForm" (ngSubmit)="Submit()" >
         <label>Nombre</label>
         <input name="name" type="text" [(ngModel)]="newCountry.name" required #countryName="ngModel"/>
         <span *ngIf="countryName.invalid">Este campo es requerido</span>
@@ -29,7 +29,7 @@
       <ul>
         <li *ngFor="let country of countries">
           {{ country.name }}
-          {{ country.capital }}
+          {{ country.capital + Sufijo }}
         </li>
       </ul>
       

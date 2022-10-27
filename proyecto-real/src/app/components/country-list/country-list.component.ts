@@ -21,7 +21,7 @@ export class CountryListComponent implements OnInit{
     forKids: ''
   }
 
- 
+ Sufijo:string = "City";
   
   constructor( private listService:ListService) { }
 
@@ -39,6 +39,15 @@ public enviar(): void {
   const copy = {...this.newCountry}
   this.Icountries.push(copy)
 }
+
+
+Submit(){
+  
+  const copy = {...this.newCountry}
+  this.Icountries.push(copy)
+  console.log(this.newCountry);
+}
+
 
 public saveCountry(): void { console.log(this.Icountries.push(this.newCountry)) }
 }
