@@ -10,3 +10,34 @@
     </ul>
 </section>
 
+
+<div class="home">
+    <form #form="ngForm" (ngSubmit)="enviar()">
+        <label>Nombre</label>
+        <input name="name" type="text" [(ngModel)]="newCountry.name" required #countryName="ngModel"/>
+        <span *ngIf="countryName.invalid">Este campo es requerido</span>
+        <span *ngIf="countryName.valid">Felicitaciones</span>
+      
+        <br>
+        <label>Capital</label>
+        <input name="capital" type="text" [(ngModel)]="newCountry.capital" />
+        <button>Submit</button>
+      </form>
+      
+      <pre> {{ newCountry | json }} </pre>
+      
+      <ul>
+        <li *ngFor="let country of countries">
+          {{ country.name }}
+          {{ country.capital }}
+        </li>
+      </ul>
+      
+</div>
+
+
+
+
+
+
+

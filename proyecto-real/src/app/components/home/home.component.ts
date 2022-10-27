@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Country } from 'src/app/interfaces/country.interface';
+import { ListService } from '../list.service';
 
 @Component({
   selector: 'app-home',
@@ -7,24 +9,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit{
 
-  model = {
+  newCountry:Country[] = []
+    
+    /*
     name: " ",
     capital: "",
-    /*accept: false*/
-  }
+    accept: false*/
+  
 
-  constructor() { }
 
+  public saveCountry(): void { console.log(this.newCountry) }
+
+  
+  constructor(private listService:ListService) { }
+  
   onSubmit(){
-    console.log(this.model);
+    console.log(this.newCountry);
     
   }
   
- ngOnInit(): void {
-   
- }
-
-
+  ngOnInit(): void {
+    this.listService.getAllCountries().subscribe((res:Country[])=> {
+      console.log(res);
+      this.newCountry = res
+      
+    });
+  }
 /*
  country(){
   console.log(
@@ -32,7 +42,7 @@ export class HomeComponent implements OnInit{
   
  }
 */
-}
+
 
 /*
 <form (ngSubmit)="onSubmit()" #myForm="ngForm">
@@ -67,3 +77,4 @@ export class HomeComponent implements OnInit{
   </form>
 
 */
+}

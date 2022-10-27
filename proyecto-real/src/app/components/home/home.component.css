@@ -1,60 +1,6 @@
-.home h2{
+ h2{
     font-family: cursive;
     margin: 24px;
 padding: 10px;
 text-align: center;
-}
-
-.home .formCountry {
-    margin: 10px;
-    background: #938484;
-text-align: center;
-padding: 28px;
-/*
-align-content: center;
-display: grid;
-*/
-
-display: flex;
-flex-wrap: wrap;
-}
-
-.home .formCountry .CountryName {
-
-    margin: 10px;
-    align-content: start;
-display: grid;
-}
-.home .formCountry .CountryName .name{
-
-    margin: 5px;
-    padding-left: 144px;
-    padding-top: 14px;
-}
-
-
-.home .formCountry .CountryCapital {
-
-    margin: 10px;
-    align-content: start;
-display: grid;
-}
-
-.home .formCountry .CountryCapital .capital{
-
-    margin: 5px;
-    padding-left: 144px;
-    padding-top: 14px;
-}
-
-.home .formCountry .boton{
-
-    margin: 5px;
-    position: relative;
-left: 80px;
-padding: 33px;
-border-radius: 70px;
-background: #2121f2;
-color: white;
-font-size: 20px;
 }
