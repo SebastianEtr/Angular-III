@@ -12,16 +12,16 @@
 
 
 <div class="home">
-    <form #form="ngForm" (ngSubmit)="Submit()" >
+    <form #form="ngForm" (ngSubmit)="Submit()"  >
         <label>Nombre</label>
-        <input name="name" type="text" [(ngModel)]="newCountry.name" required #countryName="ngModel"/>
+        <input name="name" type="text" [(ngModel)]="newCountry.name" #countryName="ngModel">
         <span *ngIf="countryName.invalid">Este campo es requerido</span>
         <span *ngIf="countryName.valid">Felicitaciones</span>
       
         <br>
         <label>Capital</label>
-        <input name="capital" type="text" [(ngModel)]="newCountry.capital" />
-        <button type="submit"  (click)="saveCountry">Submit</button>
+        <input name="capital" type="text" [(ngModel)]="newCountry.capital"  #countryCapital="ngModel"/>
+        <button type="submit" (click)="saveCountry">Submit</button>
       </form>
       
       <pre> {{ newCountry | json }} </pre>
@@ -32,7 +32,7 @@
           {{ country.capital + Sufijo }}
         </li>
       </ul>
-      
+
 </div>
 
 

@@ -18,7 +18,6 @@ export class CountryListComponent implements OnInit{
   newCountry: ICountry = {
     name: '',
     capital: '',
-    forKids: ''
   }
 
  Sufijo:string = "City";
